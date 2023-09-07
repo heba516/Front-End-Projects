@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!--body-->
+    <div class="all">
+        <!--Start sidebar-->
+        <div class="sidebar">
+            <h3>Elzero</h3>
+            <ul>
+                <li><a href="dashboard.html"><i class="fa-regular fa-chart-bar fa-fw"></i><span>Dashboard</span></a>
+                </li>
+                <li><a class="active" href="settings.html"><i
+                            class="fa-solid fa-gear fa-fw"></i><span>Settings</span></a></li>
+                <li><a href="profile.html"><i class="fa-regular fa-user fa-fw"></i><span>Profile</span></a></li>
+                <li><a href="projects.html"><i class="fa-solid fa-diagram-project fa-fw"></i><span>Projects</span></a>
+                </li>
+                <li><a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i><span>Courses</span></a></li>
+                <li><a href="friends.html"><i class="fa-regular fa-circle-user fa-fw"></i><span>Friends</span></a></li>
+                <li><a href="files.html"><i class="fa-regular fa-file fa-fw"></i><span>Files</span></a></li>
+                <li><a href="plans.html"><i class="fa-regular fa-credit-card fa-fw"></i><span>Plans</span></a></li>
+            </ul>
+        </div>
+        <!--end sidebar-->
+
+        <!--Start Settings-->
+        <div class="settings">
+            <div class="nav">
+                <div class="search">
+                    <input type="search" placeholder="Type A Keyword" />
+                </div>
+                <div class="icons">
+                    <span class="notification">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <img decoding="async" src="images/avatar.png" alt="" />
+                </div>
+            </div>
+            <div class="settings-body">
+                <div class="title">
+                    <h1>Settings</h1>
+                </div>
+                <div class="content">
+                    <div class="box security">
+                        <h3>Security Info</h3>
+                        <p>Security Information About Your Account</p>
+                        <div class="row password">
+                            <div class="text">
+                                <span>Password</span>
+                                <p>Last Change On 25/10/2021</p>
+                            </div>
+                            <a href="#">Change</a>
+                        </div>
+                        <div class="row authentication">
+                            <div class="text">
+                                <span>Two-Factor Authentication</span>
+                                <p>Enable/Disable The Feature</p>
+                            </div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox" checked>
+                                <div class="toggle-switched"></div>
+                            </label>
+                        </div>
+                        <div class="row devices">
+                            <div class="text">
+                                <span>Devices</span>
+                                <p>Check The Login Devices List</p>
+                            </div>
+                            <a href="#">Devices</a>
+                        </div>
+                    </div>
+                    <div class="box widgets">
+                        <h3>Widgets Control</h3>
+                        <p>Show/Hide Widgets</p>
+                        <div class="row">
+                            <input type="checkbox" id="one">
+                            <label for="one">Quick Draft</label>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" id="two">
+                            <label for="two">Yearly Targets</label>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" id="three">
+                            <label for="three">Tickets Statistics</label>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" id="four">
+                            <label for="four">Latest News</label>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" id="five">
+                            <label for="five">Latest Tasks</label>
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" id="six">
+                            <label for="six">Top Search Items</label>
+                        </div>
+                    </div>
+                    <div class="box backup">
+                        <h3>Backup Manager</h3>
+                        <p>Control Backup Time And Location</p>
+                        <div class="row">
+                            <input type="radio" id="daily" name="time">
+                            <label for="daily">Daily</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="weekly" name="time" checked>
+                            <label for="weekly">Weekly</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="monthly" name="time">
+                            <label for="monthly">Monthly</label>
+                        </div>
+                        <div class="boxes">
+                            <input type="radio" id="label-one" name="box" checked>
+                            <div class="box">
+                                <label for="label-one">
+                                    <i class="fa-solid fa-server"></i>
+                                    Megaman
+                                </label>
+                            </div>
+                            <input type="radio" id="label-two" name="box">
+                            <div class="box">
+                                <label for="label-two">
+                                    <i class="fa-solid fa-server"></i>
+                                    Zero
+                                </label>
+                            </div>
+                            <input type="radio" id="label-three" name="box">
+                            <div class="box">
+                                <label for="label-three">
+                                    <i class="fa-solid fa-server"></i>
+                                    Sigma
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
