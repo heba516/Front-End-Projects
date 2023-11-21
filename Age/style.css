@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e8e4e4;
+}
+
+.container {
+    background-color: white;
+    margin: 80px auto;
+    padding: 40px;
+    inline-size: 600px;
+    block-size: 550px;
+    border-radius: 10px;
+    border-end-end-radius: 120px;
+}
+
+/* Start Head */
+.head {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-block-end: 30px;
+
+}
+.head::before {
+    content: '';
+    position: absolute;
+    block-size: 2px;
+    inline-size: calc(100% - 35px);
+    background-color: #cccaca;
+    inset-inline-start: 0px;
+    inset-block-start: calc(100% + 17px);
+}
+.head span {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgb(133, 131, 131);
+    
+}
+.head .day, .head .month, .head .year {
+    display: flex;
+    flex-direction: column;
+}
+.head .day-box, .head .month-box, .head .year-box {
+    outline: none;
+    inline-size: 110px;
+    border: 1px solid #cccaca;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #666;
+    border-radius: 4px;
+    margin-block-start: 10px;
+    margin-block-end: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.head input::placeholder {
+    color: rgb(168, 162, 162);
+}
+.head .error {
+    opacity: 0;
+    font-size: 13px;
+    color: red;
+    font-style: italic;
+}
+.head .arrow {
+    position: absolute;
+    inline-size: 70px;
+    block-size: 70px;
+    background-color: rgb(82, 82, 234);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    inset-inline-end: 0px;
+    inset-block-start: 80px;
+}
+
+
+
+/* Start Data Boxes */
+.date-box {
+    margin-block-start: 50px;
+    font-size: 85px;
+    font-weight: bold;
+    letter-spacing: -4px;
+    font-style: italic;
+}
+.date-year,
+.date-month,
+.date-day {
+    display: flex;
+}
+.date-box span {
+    color: rgb(82, 82, 234);
+    margin-inline-end: 20px;
+}
+.date-box p {
+    margin-inline-start:  20px;
+}
