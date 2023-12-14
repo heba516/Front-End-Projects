@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINDY</title>
+    <link rel="icon" href="images/2_81c0aa03-67d2-4ced-98c2-3e5613f1e747.webp">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo&family=Fraunces:opsz,wght@9..144,700&family=Lunasima&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;700&family=Playpen+Sans:wght@300;400;500;600&family=Quattrocento+Sans:wght@400;700&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo&family=Fraunces:opsz,wght@9..144,700&family=Lunasima&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;700&family=Playpen+Sans:wght@300;400;500;600&family=Quattrocento&family=Quattrocento+Sans:wght@400;700&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/whistle" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container d-flex align-items-center justify-content-between mt-3">
+            <i class="cur d-md-block d-none fa-solid fa-magnifying-glass"></i>
+            <img class="cur ms-md-4" src="images/2_81c0aa03-67d2-4ced-98c2-3e5613f1e747.webp" alt="logo">
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+    </header>
+
+    <nav class="text-center mt-4">
+        <ul class="d-flex justify-content-center align-items-center p-0">
+            <li><a href="index.html">Home</a></li>
+            <li class="shop cur">
+                Shop <i class="fa-solid fa-angle-down ms-2"></i>
+                <ul class="shop-menu">
+                    <li><a>Best Sellers</a></li>
+                    <li><a>New Arrivals</a></li>
+                    <li><a>On Sale</a></li>
+                    <li><a>All Collections</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="product-card container mt-4">
+        <div class="row">
+            <div class="image col-sm-12 col-md-7"><img src="images/product3.png" alt=""></div>
+            <div class="ImgForm col-sm-12 col-md-5 ps-md-5">
+                <h2 class="mb-4 mt-4 mt-md-0">You're Amazing</h2>
+                <p class="price"><span class="pr"></span></p>
+                <div class="size-box">
+                    <p class="label">Size</p>
+                    <div class="size">
+                        <span class="sm cur">S</span>
+                        <span class="md cur">M</span>
+                        <span class="lg cur">L</span>
+                    </div>
+                </div>
+                <div class="quantity-box mt-4">
+                    <p class="label">Quantity</p>
+                    <div class="quantity d-flex align-items-center justify-content-between p-2">
+                        <i class="fa-solid fa-minus"></i>
+                        <span class="quantity-counter">1</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+                <a class="btn one mt-3" href="">Add to cart</a>
+                <a class="btn two" href="">Buy it now</a>
+                <p class="para mt-3">Candy macaroon chocolate cake powder donut. Powder ice cream pudding pie chocolate
+                    bar
+                    muffin sugar
+                    plum
+                    sweet. Gingerbread brownie donut croissant jelly-o marshmallow chocolate cake pudding sugar plum.
+                    Pastry
+                    marzipan topping wafer dessert chupa chups bonbon croissant.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="ani mt-1 text-md-start text-center pt-md-0 pt-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 col-sm-12">
+                    <h3 class="about text-white">About Us</h3>
+                    <p class="text-white-50">Share contact information, store details, and brand content with your
+                        customers.</p>
+                    <div class="copy text-white-50">
+                        <p>&copy; 2023, Cindy Theme Website Designed by Studio Zash</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <img src="images/cindy_logo_2.avif" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+    <script src="JS/product.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const price = urlParams.get('price');
+        const src = urlParams.get('src');
+        let priceSpan = document.querySelector(".pr")
+        let cardImage = document.querySelector('.image img');
+        priceSpan.innerHTML = price;
+        cardImage.src = src;
+    </script>
+</body>
+
+</html>
