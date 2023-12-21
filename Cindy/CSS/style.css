@@ -83,6 +83,7 @@ h2 {
 
 /*header social */
 .social i{
+    font-size: 20px;
     padding-inline-end: 15px;
     cursor: pointer;
 }
@@ -112,7 +113,7 @@ nav ul li:not(:last-child), nav ul li.shop {
 nav ul li a.active {
     border-bottom: 1px solid var(--font-color);
 }
-nav ul li a:hover, nav ul li:hover a.active, nav ul li.shop:hover {
+nav ul li a:hover, nav ul li:hover a.active{
     color: var(--font-color-hover);
     border-bottom: 1px solid var(--font-color);
 }
@@ -547,4 +548,42 @@ footer .about {
 .product-card .ImgForm .para {
     color: var(--font-color);
     line-height: 2;
+}
+/* ////////////////////////// */
+.buy .buy-form {
+    border-right: 1px solid #9d969d;
+}
+.buy .buy-form .formBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border: none;
+    cursor: auto;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.buy .imgBox img {
+    width: 64px;
+    height: 64px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.buy .imgBox .img, .buy .imgBox .imgText, .buy .total p {
+    flex: 1;
+}
+.buy .imgBox .imgText span {
+    color: var(--font-color);
+}
+.buy .total p:first-of-type {
+    font-size: 18px;
+}
+.buy .total p:last-of-type {
+    font-weight: bold;
 }

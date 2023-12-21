@@ -1,4 +1,4 @@
-let shop = document.querySelector('.shop');
+let shop = document.querySelector('.shop a');
 let shopMenu = document.querySelector('.shop-menu');
 let icon = document.querySelector('.shop i');
 let background1 = document.querySelector('.img-new-arrivals .img1');
@@ -67,27 +67,3 @@ window.onscroll = function() {
         }
     })
 }
-
-
-
-//////////////////////////////////////
-let boxes = document.querySelectorAll(".most-wanted .row .box");
-let btns = document.querySelectorAll(".most-wanted .btn");
-let prices = document.querySelectorAll(".priceP");
-let imges = document.querySelectorAll(".most-wanted .row .box .img")
-
-btns.forEach((btn, index) => {
-    btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        const selectedBox = boxes[index];
-        const selectedPrice = prices[index].innerHTML;
-        const selectedImg = imges[index].src;
-
-        const urlParams = new URLSearchParams(window.location.search);
-        urlParams.set('price', selectedPrice);
-        urlParams.set('src', selectedImg);
-        
-        const newUrl = 'product.html?' + urlParams.toString();
-        window.location.href = newUrl;
-    });
-});
