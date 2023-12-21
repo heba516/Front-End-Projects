@@ -550,8 +550,10 @@ footer .about {
     line-height: 2;
 }
 /* ////////////////////////// */
-.buy .buy-form {
-    border-right: 1px solid #9d969d;
+@media (min-width: 768px) {
+    .buy .buy-form {
+        border-right: 1px solid #9d969d;
+    }
 }
 .buy .buy-form .formBtn {
     width: 100%;
