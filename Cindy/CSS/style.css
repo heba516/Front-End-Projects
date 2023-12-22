@@ -34,6 +34,10 @@ h2 {
     font-family: var(--font-family);
     margin-bottom: 45px;
 }
+img {
+    max-width: 100%;
+}
+
 
 /* main title style */
 .main-title {
@@ -524,11 +528,11 @@ footer .about {
     background-color: var(--font-color-hover);
     color: white;
 }
-.product-card .ImgForm .quantity {
+.product-card .ImgForm .quantity, .cart_quntity .quantity {
     border: 1px solid var(--font-color);
     width: 150px;
 }
-.product-card .ImgForm .quantity i:first-of-type{
+.product-card .ImgForm .quantity i:first-of-type, .cart_quntity i:first-of-type{
     cursor: not-allowed;
     color: #9d969d;
 }
@@ -588,4 +592,21 @@ footer .about {
 }
 .buy .total p:last-of-type {
     font-weight: bold;
+}
+
+
+/* ///////////////////////////////////////////// */
+.cart_box .cart_img img {
+    width: 160px;
+}
+.cart_img, .cart_quntity {
+    display: flex;
+}
+.cart_quntity {
+    align-items: center;
+}
+.cart_box {
+    color: var(--font-color);
+    margin-top: 20px;
+    align-items: start;
 }
