@@ -1,3 +1,24 @@
+let boxes = document.querySelectorAll(".most-wanted .row .box");
+let btns = document.querySelectorAll(".most-wanted .btn");
+let prices = document.querySelectorAll("span.priceP");
+let imges = document.querySelectorAll(".most-wanted .row .box .img");
+var productCounter = 0;
+
+btns.forEach((btn, index) => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        productCounter++;
+
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('price', prices[index].textContent);
+        urlParams.set('src', imges[index].src);
+        
+        const newUrl = 'product.html?' + urlParams.toString();
+        window.location.href = newUrl;
+    })
+});
+
+
 //Sizes box
 let sizes = document.querySelectorAll(".size span");
 let selectedSize = ''
@@ -36,8 +57,7 @@ quantityMinus.onclick = function() {
 
 
 ///////////////////////////////////////////////////
-let image = document.querySelector(".product-card .image img");
-let price = parseFloat(document.querySelector(".product-card .ImgForm .pr").textContent);
+let price = parseFloat(urlParams.get('price'));
 let btn = document.querySelector(".product-card .two");
 
 btn.addEventListener("click", (e) => {
@@ -46,7 +66,7 @@ btn.addEventListener("click", (e) => {
     let total = price * counter;
 
     const urlParams = new URLSearchParams(window.location.search);
-    urlParams.set('src', image.src);
+    urlParams.set('src', urlParams.get('src'));
     urlParams.set('size', size);
     urlParams.set('qun', counter);
     urlParams.set('total', total);
@@ -54,3 +74,12 @@ btn.addEventListener("click", (e) => {
     const newUrl2 = 'buy_product.html?' + urlParams.toString();
     window.location.href = newUrl2;
 });
+
+
+///////////////////////////////////////////////////
+//cart
+if (productCounter === 0) {
+    document.querySelector(".empty").style.display = "block";
+} else {
+    document.querySelector(".empty").style.display = "none";
+};

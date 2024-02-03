@@ -20,8 +20,7 @@ shop.onclick = function () {
 }
 
 document.addEventListener ("click", e => {
-    if (e.target !== shop && e.target !== shopMenu) {
-        
+    if (e.target !== shop && e.target !== shopMenu) {       
         //if menu is open
         if (shopMenu.classList.contains("open")){
 

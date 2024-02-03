@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINDY</title>
-    <link rel="icon" href="images/about_section.png">
+    <link rel="icon" href="images/2_81c0aa03-67d2-4ced-98c2-3e5613f1e747.webp">
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css.map">
@@ -33,7 +33,7 @@
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-pinterest"></i>
                 <i class="fa-brands fa-instagram"></i>
-                <a href="#" class="text-dark"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="cart.html" class="text-black"><i class="fa-solid fa-bag-shopping"></i></a>
             </div>
         </div>
     </header>
@@ -55,40 +55,9 @@
         </ul>
     </nav>
 
-    <div class="cart container mt-5">
-        <h2 class="main-title text-center mb-4">Your Cart</h2>
-        <div class="cart_titles row">
-            <div class="col-sm-6">
-                <p>product</p>
-            </div>
-            <div class="col-sm-3">
-                <p>quantity</p>
-            </div>
-            <div class="col-sm-3">
-                <p>total</p>
-            </div>
-        </div>
-        <div class="cart_box row">
-            <div class="cart_img col-sm-6">
-                <img src="images/product3.png" alt="">
-                <div class="text ms-4">
-                    <p>You are amazing</p>
-                    <p class="price">&euro; <span class="pr"></span></p>
-                    <p>Size: <span class="size">S</span></p>
-                </div>
-            </div>
-            <div class="cart_quntity col-sm-3">
-                <div class="quantity d-flex align-items-center justify-content-between p-2">
-                    <i class="fa-solid fa-minus"></i>
-                    <span class="quantity-counter">1</span>
-                    <i class="fa-solid fa-plus"></i>
-                </div>
-                <i class="fa-regular fa-trash-can ms-4 text-dark"></i>
-            </div>
-            <div class="cart_total col-sm-3">
-                <p class="pr">120</p>
-            </div>
-        </div>
+    <div class="empty container text-center d-flex justify-content-center align-items-center">
+        <h2>Your cart is empty</h2>
+        <a href="products.html">Continue Shopping</a>
     </div>
 
     <footer class="ani mt-1 text-md-start text-center pt-md-0 pt-3">
@@ -110,8 +79,6 @@
     </footer>
 
     <script src="JS/main.js"></script>
-    <script src="JS/product.js"></script>
-    <!-- <script src="JS/main.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const priceVal = urlParams.get('price');
@@ -121,7 +88,7 @@
         priceSpan.innerHTML = priceVal;
         cardImage.src = src;
     </script>
-    <script src="JS/product.js"></script> -->
+    <script src="JS/product.js"></script>
 </body>
 
 </html>
