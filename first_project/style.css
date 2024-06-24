@@ -71,6 +71,9 @@ nav {
     flex-basis: 400px;
     text-transform: capitalize;
 }
+.nav_menu img {
+    width: 110px;
+}
 .nav_menu li {
     padding: 5px 10px;
     border-radius: 5px;
@@ -82,10 +85,10 @@ nav {
 .nav_menu li a {
     color: white;
 }
-.nav_menu .active, .nav_menu li:hover {
+.nav_menu .active, .nav_menu li:not(:first-of-type):hover {
     background-color: rgb(17 24 39 / 1);
 }
-nav img {
+nav .account img {
     width: 30px;
 }
 .account {
