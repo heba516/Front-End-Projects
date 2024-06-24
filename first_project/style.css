@@ -374,7 +374,7 @@ footer {
 
 
 @media (max-width: 768px) {
-    .nav_container, .title:not(.explore .box .title), .show_products {
+    .nav_container, .title:not(.explore .box .title), .show_products, .copyright {
         flex-direction: column;
     }
     .nav_menu, .account {
