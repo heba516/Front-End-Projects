@@ -46,7 +46,7 @@ h1, h2, h3 {
 .dark .create_sell .boxes .box p, .dark .explore .box>p:first-of-type, .dark .explore .acc_address span {
     color: var(--gray);
 }
-.light .landing, .light h1, .light .create_sell .boxes .box, .light .show_products button, .light .box p {
+.light .landing, .light h1, .light .create_sell .boxes .box, .light .show_products button, .light .box p, .light .explore .show_products button {
     color: #161A42;
 }
 .dark .top_newest .box {
