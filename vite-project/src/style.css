@@ -5,7 +5,9 @@ body {
 .app {
   width: 300px;
   margin: auto;
-  text-align: center
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .steps {
@@ -70,4 +72,29 @@ body {
 }
 .prev_btn:hover {
   background-color: rgb(237, 234, 234);
+}
+
+
+.content {
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  width: fit-content;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.slide {
+  width: 290px;
+  margin: 0 5px;
+}
+
+.err {
+  display: none;
+  font-size: 13px;
+  padding: 5px;
+  color: red;
 }
